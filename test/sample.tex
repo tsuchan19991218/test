@@ -1,0 +1,61 @@
+\documentclass{article} 
+    % Use jsarticle in Japanese. 
+
+\usepackage{graphicx}
+
+\begin{document}
+    \title{Title}    
+    \author{Your name and Osamu Maruyam}
+    \maketitle
+
+    \section{Background}
+
+    Examples of a citation: 
+    \cite{Narlikar2006Informative}
+
+    \cite{Narlikar2007Nucleosome}
+
+    \section{Methods}
+
+    \subsection{Materials}
+
+    Fig.~\ref{fig:overview} shows ...
+
+    
+    \begin{figure}[h]
+        % Comment out the next
+        % \includegraphics[option]{filename}
+        \label{fig:overview}
+        \caption{Overview of our method. ....}
+    \end{figure}
+    
+
+    Tab.~\ref{tab:comparison} gives \dots
+
+    \begin{table}[h]
+        \begin{center}
+            \label{tab:comparison}
+            \caption{Performance comparison. Each row corresponds to ... }
+            \begin{tabular}{l|rr}
+                Tool & F & std \\\hline
+                Algo1 & 0.8 & 0.10 \\
+                Algo2 & 0.9 & 0.05 
+            \end{tabular}
+        \end{center}
+      \end{table}
+
+
+
+
+
+    \section{Results}
+
+    \section{Discussion}
+
+    \section{Conclusion}
+    The title might be Conclusions. 
+
+    \bibliographystyle{plain}
+    \bibliography{ref}   
+
+\end{document}
